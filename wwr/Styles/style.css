@@ -1,0 +1,56 @@
+#content{
+    max-width:1200px;
+    margin: 0 auto;
+    background-color: lightgray;
+    padding:20px;
+
+}
+#background{
+    height:725px;
+}
+body{
+    background-color: #fcfbfb;
+
+}
+header{
+background-color:rgba(20,30,13,.7); 
+}
+nav a:hover{
+    background-color:white;
+    text-align: center;
+    text-decoration: none;
+}
+.book,.join
+{
+    background-color: #FF7F50;
+    color:white;
+    text-decoration: none;
+
+}
+.book:hover{
+    background-color:white;
+}
+
+.join:hover{
+   background-color:white;
+}
+
+
+#background
+{
+     background-color: #795548;
+}
+.msg{
+    background-color:white;
+}
+footer{
+    background-color: white;
+    color:white;
+    text-decoration: none;
+}
+footer p{
+    font-size: 1.2em;
+}
+footer p a:hover{
+    text-decoration: underline;
+}
