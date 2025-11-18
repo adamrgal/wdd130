@@ -216,6 +216,69 @@ main section {
     grid-row: 5/8;
     box-shadow: 5px 5px 10px rgba(51, 51, 51, 0.5);
 }
+/* --- FAQ PAGE STYLES --- */
+
+.faq-hero {
+    position: relative; 
+    width: 100%;
+}
+
+.faq-hero img {
+    width: 100%;
+    height: auto;
+    filter: brightness(70%); 
+}
+
+.faq-hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7); 
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 25px; 
+    
+  
+    max-width: 1000px;
+    margin: 50px auto; 
+    padding: 0 20px; 
+}
+
+.faq-item {
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05); 
+}
+
+.faq-question {
+    font-size: 1.5em;
+    color: #333;
+    margin: 0 0 15px 0; 
+}
+
+.faq-answer {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6; 
+}
+
+
+.faq-answer ul {
+    margin-top: 15px; 
+    padding-left: 20px; 
+}
+
+.faq-answer li {
+    margin-bottom: 10px; 
+}
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
