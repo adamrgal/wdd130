@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Functional Form</title>
+    
+    <style>
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            display: grid;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input[type="text"], 
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        #feedback {
+            background-color: antiquewhite;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: .5em;
+            text-align: center;
+            font-weight: bold;
+            display: none;      
+        }
+        
+        .moveDown {
+            margin-top: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+
+    <div id="feedback"></div>
+
+    <form method="get" action="thanks.html">
+        <label for="user_name_input">Your Name:</label>
+        <input type="text" id="user_name_input" name="user_name" required> 
+
+        <label for="email_input">Your Email:</label>
+        <input type="text" id="email_input" name="user_email" required>
+
+        <label for="message_input">Your Message:</label>
+        <textarea id="message_input" name="user_message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <script>
+        const feedbackElement = document.getElementById('feedback');
+        const formElement = document.forms[0]; 
+        
+        formElement.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            
+            feedbackElement.style.display = "block";
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+</body>
+</html>
