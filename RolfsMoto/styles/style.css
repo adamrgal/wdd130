@@ -114,7 +114,7 @@ main h1 {
     margin-bottom: 15px;
     overflow: hidden;
 
-    background-image: url("../images/homepage1.jpg");
+    background-image: url("/images/homepage1.jpg");
     background-attachment: fixed; 
     background-position: center;
     background-repeat: no-repeat;
