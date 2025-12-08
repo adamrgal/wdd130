@@ -27,6 +27,11 @@ header {
     color: #f0a500; 
 }
 
+header img {
+    width: 50px; 
+    height: auto;
+}
+
 nav a {
     margin-left: 20px;
     font-weight: bold;
@@ -40,12 +45,67 @@ nav a:hover {
 
 
 main {
-    max-width: 800px;
+    max-width: 900px; 
     margin: 0 auto;
     padding: 20px;
-    text-align: center; 
+    text-align: left; 
 }
 
+main h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #396E94;
+    text-align: center;
+}
+
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto; 
+    gap: 30px;
+    margin-top: 30px;
+    grid-template-areas: 
+        "image1 text1"
+        "text2 image2";
+}
+
+.about-section > .image-box:first-child {
+    grid-area: image1;
+}
+
+.about-section > .text-box:nth-of-type(1) {
+    grid-area: text1;
+    align-self: center; 
+}
+
+.about-section > .text-box:nth-of-type(2) {
+    grid-area: text2;
+    align-self: center;
+}
+
+.about-section > .image-box:last-child {
+    grid-area: image2;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 5px solid #f0a500;
+}
+
+.text-box {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-left: 5px solid #396E94;
+}
+
+.text-box p {
+    font-family: Roboto;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #333;
+}
 
 #parallax-hero {
     position: relative;
@@ -54,7 +114,7 @@ main {
     margin-bottom: 15px;
     overflow: hidden;
 
-    background-image: url("RolfsMoto/images/homepage1.jpg");
+    background-image: url("../images/homepage1.jpg");
     background-attachment: fixed; 
     background-position: center;
     background-repeat: no-repeat;
@@ -119,3 +179,4 @@ footer img {
     vertical-align: middle;
 }
 
+/* poop nugget */
