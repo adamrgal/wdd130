@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Rolfs Motorcycles</title>
+    <link rel="stylesheet" href="styles/style.css"> 
 </head>
 <body>
 
@@ -20,12 +21,34 @@
         <h1>Contact Us</h1>
 
         <div class="contact-grid">
-            <div class="grid-item">
+            
+            <div class="grid-item hours-item">
                 <h3>Hours</h3>
-                <img src="images/schedule .png" alt="Hours Table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday – Friday</td>
+                            <td>9:00 AM – 5:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>9:00 AM – 4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Closed</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
-            <div class="grid-item">
+            <div class="grid-item location-item">
                 <h3>Location</h3>
                 <img src="images/map.jpg" alt="Map Screenshot">
                 <p>111 S Main St, Longmont, CO 80501</p>
@@ -34,13 +57,18 @@
 
         <div class="info-section">
             <h3>Call us</h3>
-            <p>(970) 575-3322</p>
+            <p class="phone-number">(970) 575-3322</p>
             <p>Please call us if you have any questions or special requests.</p>
         </div>
 
         <div class="info-section">
             <h3>Social media</h3>
             <p>If you would like social media updates, we also have an <a href="instagram.com">instagram</a>.</p>
+            <div class="social-icons">
+                <a href="instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="x.com"><img src="images/twitter.png" alt="Twitter"></a>
+            </div>
         </div>
 
     </main>

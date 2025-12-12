@@ -179,4 +179,99 @@ footer img {
     vertical-align: middle;
 }
 
-/* poop nugget */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin: 40px auto;
+    max-width: 900px; /* Aligns with main max-width */
+    padding: 0 20px;
+}
+
+.grid-item h3 {
+    color: #396E94;
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 2px solid #f0a500;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Hours Table Styling */
+.hours-item table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+}
+
+.hours-item th, .hours-item td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-family: Roboto;
+    font-size: 1.1rem;
+}
+
+.hours-item th {
+    background-color: #396E94;
+    color: white;
+    font-weight: bold;
+}
+
+/* Location Image and Text */
+.location-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 3px solid #f0a500;
+}
+
+.location-item p {
+    font-family: Roboto;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Call and Social Media Sections */
+.info-section {
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px dashed #396E94;
+}
+
+.info-section h3 {
+    color: #f0a500;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.info-section p {
+    font-family: Roboto;
+    line-height: 1.5;
+    color: #333;
+}
+
+.phone-number {
+    font-family: Oswald;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #396E94;
+    margin: 10px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
